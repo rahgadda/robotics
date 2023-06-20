@@ -27,3 +27,6 @@
    - Login to terminal with username/password = `pi/raspberry`   
    
      ![](./01-images/Emulator.png)
+
+## Reference
+- [Medium Pi System Emulation](https://raduzaharia.medium.com/system-emulation-using-qemu-raspberry-pi-4-and-efi-87652ff203b7)
