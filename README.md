@@ -13,4 +13,5 @@
 - Drone
 
 ## Softwares
-- Emulator - QEMU -> [Wiki](https://wiki.qemu.org/Main_Page) ,[Download](https://qemu.weilnetz.de/w64/2023/?C=M;O=D)
+- **Oracle Linux OS ->** [Overview](https://docs.oracle.com/en/learn/oracle-linux-install-rpi/#prepare-the-installation-media), [Download](https://www.oracle.com/linux/downloads/linux-arm-downloads.html), [Networking]()
+- **Emulator - QEMU ->** [Wiki](https://wiki.qemu.org/Main_Page) ,[Download](https://qemu.weilnetz.de/w64/2023/?C=M;O=D)
