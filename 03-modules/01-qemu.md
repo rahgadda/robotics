@@ -29,4 +29,5 @@
      ![](../01-images/Emulator.png)
 
 ## Reference
+- **Emulator - QEMU -** [Wiki](https://wiki.qemu.org/Main_Page) ,[Download](https://qemu.weilnetz.de/w64/2023/?C=M;O=D)
 - [Medium Pi System Emulation](https://raduzaharia.medium.com/system-emulation-using-qemu-raspberry-pi-4-and-efi-87652ff203b7)
