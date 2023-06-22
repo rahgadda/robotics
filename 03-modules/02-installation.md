@@ -67,8 +67,8 @@
   Type=oneshot
   RemainAfterExit=yes
 
-  #ExecStart=modprobe -vvv -r brcmfmac
-  #ExecStart=modprobe -vvv brcmfmac
+  ExecStart=modprobe -vvv -r brcmfmac
+  ExecStart=modprobe -vvv brcmfmac
   ExecStart=/usr/sbin/ip link set dev %i up
   ExecStart=/usr/sbin/wpa_supplicant -B -i %i -c /etc/wpa_supplicant/wpa_supplicant.conf
   ExecStart=/usr/sbin/dhclient -v %i
@@ -81,6 +81,7 @@
 
   # Enable service network-wireless@.service
   ln -s /etc/systemd/system/network-wireless@.service /etc/systemd/system/multi-user.target.wants/network-wireless@wlan0.service
+  
   systemctl daemon-reload
   systemctl start network-wireless@wlan0.service
   ```
