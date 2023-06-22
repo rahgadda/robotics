@@ -27,12 +27,13 @@
   ## -- Install UI
   yum groupinstall "Server with GUI"
   systemctl set-default graphical
-
+  reboot
 
   ## -- Enable Wifi
   ## Note: when wifi is enabled, it disables the eth0. You need to run “rmmod brcmfmac” to restore access via eth0
 
-  dnf -y install wpa_supplicant
+  # Install this if it is not installed
+  # dnf -y install wpa_supplicant
 
   # Update with your NETWORK_SSID and NETWORK_PASSWORD/PSA
   cat << EOF > /etc/wpa_supplicant/wpa_supplicant.conf
