@@ -1,4 +1,4 @@
-# Qemu - PI Emulator
+# Qemu - Rasbeery PI Emulator
 
 ## Overview
 - `qemu` can be used to emiulate Raspberry Pi on Windows 10.
