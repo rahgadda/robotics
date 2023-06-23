@@ -8,6 +8,8 @@
 - `Download Kernel` from [here](https://github.com/dhruvvyas90/qemu-rpi-kernel/blob/master/kernel-qemu-4.19.50-buster)
 - `Download Compiled device tree file (.dtb)` from [here](https://github.com/dhruvvyas90/qemu-rpi-kernel/blob/master/versatile-pb-buster.dtb)
 - `Download Raspbian OS` from [here](http://downloads.raspberrypi.org/raspbian/images/raspbian-2020-02-14/2020-02-13-raspbian-buster.zip). Extract the zip file and extract `2020-02-13-raspbian-buster.img`
+- `Download BIOS EFI` from [here](https://releases.linaro.org/components/kernel/uefi-linaro/16.02/release/qemu64/QEMU_EFI.fd)
+- `Download Oracle OLE9 for Pi` from [here](https://www.oracle.com/linux/downloads/linux-arm-downloads.html)
 - Create a folder `D:\MyDev\pi\QEMU` or equivalent. Place all the above files.
   - For Pi 32 Bit 
     - Create `start.bat` with below commands
