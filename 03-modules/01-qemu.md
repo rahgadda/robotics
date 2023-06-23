@@ -30,12 +30,43 @@
     - Login to terminal with username/password = `pi/raspberry`   
       ![](../01-images/Emulator.png)
   - For Arm64 Linux
-    - Create `start_arm64_disk.bat` with below commands
-      ```bat
-      ```
     - Create `start_arm64.bat` with below commands
       ```bat
+      "c:\Program Files\qemu\qemu-system-aarch64.exe" ^
+      -name "Raspberry Pi-4 4GB Config" ^
+      -M virt ^
+      -cpu cortex-a72 ^
+      -smp 2 ^
+      -m 4048 ^
+      --accel tcg,thread=multi ^
+      -serial stdio ^
+      -device VGA ^
+      -device nec-usb-xhci ^
+      -device usb-kbd ^
+      -device usb-tablet ^
+      -device intel-hda ^
+      -device hda-duplex ^
+      -bios QEMU_EFI.fd ^
+      -display default,show-cursor=on ^
+      -drive if=none,file="D:\MyDev\pi\QEMU\pi4-64\rpi-ol9.2-image-20230519.img",id=hd0,cache=writeback  ^
+      -device virtio-blk,drive=hd0,bootindex=0  ^
+      -net nic ^
+      -net user,hostfwd=tcp::5022-:22 ^
+      -no-reboot ^
+      -d guest_errors ^
+      -boot menu=on
       ```
+    - Connecting to `enable ssh for root`
+      ```bash
+      # Enable root use for ssh
+      vi /etc/ssh/sshd_config 
+
+      # Update --> PermitRootLogin yes
+
+      # Restart sshd
+      systemctl restart sshd
+      ```
+    - SSH to Guest OS via `ssh root@localhost -p 5022`
   
 ## Reference
 - **Emulator - QEMU -** [Wiki](https://wiki.qemu.org/Main_Page) ,[Download](https://qemu.weilnetz.de/w64/2023/?C=M;O=D)
