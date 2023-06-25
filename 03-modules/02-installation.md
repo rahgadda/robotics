@@ -9,4 +9,4 @@
   - Navigate to `Advance --> Network --> DHCP Server --> Add Reservation`, Add Mac Adress and Static IP, i have used 192.168.0.5
 - Enable `remote ssh` by navigating to `Home --> Preferences --> Raspberry Pi Configuration --> Interface --> SSH`
 - Enable `remote VNC` by navigating to `Home --> Preferences --> Raspberry Pi Configuration --> Interface --> VNC`
-- Buy any VR Controller [like](https://www.flipkart.com/umido-vr-controller/p/itmekhutjeapruqp) this and connect to PI uisng bluethooth.
+- Buy any VR Controller [like](https://www.flipkart.com/umido-vr-controller/p/itmekhutjeapruqp) this and connect to PI using bluethooth.
