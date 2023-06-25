@@ -25,6 +25,9 @@
 ## Python
 - Configuration listed below
   ```bash
+  # Install dependencies
+  sudo apt install libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.6 libgdm-dev libdb4o-cil-dev libpcap-dev
+
   # Download Latest Python
   wget https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tgz
   tar -zxvf Python-3.11.4.tgz
