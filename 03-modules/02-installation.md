@@ -32,20 +32,22 @@
   ./configure --enable-optimizations
   make altinstall
   rm -rf Python-3.11.4.tgz
+  curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
+  pip3.11 -V
 
   # Install Virtual Env Library
-  pip install virtualenv
+  pip3.11 install virtualenv
 
   # Create a Project Folder
-  mkdir -m 777 python-3.11
-  cd python-3.11
+  mkdir -m 777 bluetooth
+  cd bluetooth
 
-  # 
-  python -m venv env
-  source /home/kiaan/mydev/python-3.11/env/bin/activate
-  python --version
-  pip install --upgrade pip
-  pip freeze | xargs pip install --upgrade
-  pip install -r requirements.txt
+  # Create virtual environment
+  python-3.11 -m venv env
+  source /home/kiaan/mydev/bluetooth/env/bin/activate
+  python-3.11 --version
+  pip3.11 install --upgrade pip
+  pip3.11 freeze | xargs pip3.11 install --upgrade
+  pip3.11 install -r requirements.txt
   deactivate
   ```
