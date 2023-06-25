@@ -21,3 +21,31 @@
     ```
 - Buy any VR Controller [like](https://www.flipkart.com/umido-vr-controller/p/itmekhutjeapruqp) this and connect to PI using bluethooth.   
   ![](../01-images/VR_Controller_Connectivity.png)
+
+## Python
+- Configuration listed below
+  ```bash
+  # Download Latest Python
+  wget https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tgz
+  tar -zxvf Python-3.11.4.tgz
+  cd  Python-3.11.4
+  ./configure --enable-optimizations
+  make altinstall
+  rm -rf Python-3.11.4.tgz
+
+  # Install Virtual Env Library
+  pip install virtualenv
+
+  # Create a Project Folder
+  mkdir -m 777 python-3.11
+  cd python-3.11
+
+  # 
+  python -m venv env
+  source /home/kiaan/mydev/python-3.11/env/bin/activate
+  python --version
+  pip install --upgrade pip
+  pip freeze | xargs pip install --upgrade
+  pip install -r requirements.txt
+  deactivate
+  ```
