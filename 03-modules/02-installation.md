@@ -31,9 +31,12 @@
   cd  Python-3.11.4
   ./configure --enable-optimizations
   make altinstall
-  rm -rf Python-3.11.4.tgz
-  curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
+  
+  wget https://bootstrap.pypa.io/get-pip.py | python3.11
   pip3.11 -V
+
+  cd ..
+  rm -rf Python-3.11.4.tgz
 
   # Install Virtual Env Library
   pip3.11 install virtualenv
